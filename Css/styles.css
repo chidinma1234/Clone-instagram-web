@@ -21,7 +21,7 @@ a {
   width: 60%;
 }
 .profile {
-  width: 15%;
+  width: 14%;
   border-radius: 50%;
   margin: 1em 1em 0 0;
   vertical-align: bottom;
@@ -42,9 +42,7 @@ a {
   flex-direction: column;
   justify-content: center;
 }
-.sidebar ul li a {
-  display: block;
-}
+
 .sidebar ul li a i {
   font-size: 1.5em;
 }
@@ -53,14 +51,205 @@ a {
 }
 .more {
   margin-top: 3em;
+  height: 100vh;
 }
 
 /* main section */
 .main {
   width: 50%;
   height: 100%;
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
 }
+.main .story {
+  width: 85%;
+  margin: 0.6em 0 0.6em 5em;
+  padding: 1.3em 0;
+  display: flex;
+  border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 10px;
+  background-color: #fff;
+}
+.story .stories {
+  width: 20%;
+  height: 20%;
+  margin: 0 0.5em;
+}
+.story .stories a img {
+  border-radius: 50%;
+  border: 2px solid #c62d8f;
+  object-fit: cover;
+
+  padding: 0.15em;
+}
+
+.stories p {
+  font-size: 0.8rem;
+  text-overflow: ellipsis;
+  color: #262626;
+}
+/* posts */
+.posts {
+  margin: 0.6em 0 0.6em 5em;
+  width: 85%;
+  background-color: #fff;
+  border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 8px;
+}
+.posts .post-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+.posts .post-title .post-left {
+  display: flex;
+  align-items: center;
+}
+.posts .post-title .post-left .post-img img {
+  border-radius: 50%;
+  border: 2px solid #c62d8f;
+  object-fit: cover;
+}
+.posts .post-title .post-left .post-details p {
+  margin-left: 0.5em;
+}
+.posts .post-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.posts .post-content video {
+  width: 100%;
+  height: 100%;
+}
+
+.posts .post-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.posts .post-footer .like-share-coment i {
+  font-size: 1.2rem;
+  margin-right: 1em;
+}
+.posts .post-footer .collections {
+  font-size: 1.2rem;
+}
+.posts .post-footer-content {
+  padding: 0 1em 0.3em 1em;
+}
+.posts .post-footer-content p {
+  margin-bottom: 0.6em;
+}
+.posts .post-footer-content span {
+  color: gray;
+}
+.posts .post-footer-content .comments {
+  color: gray;
+}
+.posts .post-footer-content .posting-time {
+  font-size: 0.6rem;
+  color: rgb(150, 149, 149);
+}
+.posts .post-footer-content {
+  border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.posts .add-comment {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.posts .add-comment .left-side {
+  display: flex;
+  align-items: center;
+}
+.posts .add-comment .left-side input {
+  border: 0;
+  outline: 0;
+  margin-left: 1em;
+  color: rgb(203, 203, 203);
+}
+.posts .add-comment .left-side i {
+  font-size: 1.2rem;
+}
+.posts .add-comment .right-side {
+  color: rgb(172, 227, 227);
+}
+/* rightbar section */
 .rightbar {
-  width: 50%;
+  width: 30%;
+  margin: 3em 2em;
+}
+.rightbar .profile-title {
+  display: flex;
+  align-items: center;
+}
+.rightbar .profile-title .profile-left {
+  display: flex;
+  align-items: center;
+  margin-right: 2em;
+}
+.rightbar .profile-title .profile-left .profile-image img {
+  border-radius: 50%;
+  margin-right: 1em;
+}
+.rightbar .profile-title .profile-left .details .name {
+  margin-bottom: 0.1em;
+}
+.rightbar .profile-title .profile-left .details .sub-name {
+  color: gray;
+}
+.rightbar .profile-title .profile-right {
+  /* margin-left: 5em; */
+  color: #39b3ed;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.switch {
+  margin-left: 1em;
+}
+
+.rightbar .suggestions {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.suggestion-right {
+  margin-left: 5em;
+  font-size: 0.8rem;
+  color: #262626;
+}
+.follow {
+  margin-left: 1em;
+}
+.side {
+  margin-bottom: 1em;
+}
+.new {
+  font-size: 0.8rem;
+}
+.rightbar ul {
+  font-size: 0.8rem;
+  padding: 0 0.5em;
+  margin: 1.8em 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rightbar ul li {
+  margin-right: 0.2rem;
+}
+.rightbar ul li a {
+  color: #dddddd;
+}
+.copyright {
+  color: #dddddd;
+  font-size: 0.8rem;
+  margin: 1.3em 0;
 }
